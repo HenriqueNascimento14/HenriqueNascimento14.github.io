@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Portfólio | Henrique Silva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        /* Menu de navegação configurado com fundo branco */
+        .categories-nav {
+            background-color: #ffffff;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .categories-nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Portifolio</h1>
+
+    <header>
+        <h1>Henrique Silva do Nascimento</h1>
+        <p>Especialista em PCP | Desenvolvedor de Soluções Industriais</p>
+    </header>
+
+    <nav class="categories-nav">
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="container">
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Trabalho com Planejamento e Controle da Produção e estou fazendo a transição para a área de tecnologia. Meu foco é utilizar Python, JavaScript e ferramentas de análise de dados para criar soluções que otimizem a rotina operacional e apoiem a tomada de decisão no chão de fábrica.</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos em Destaque</h2>
+            
+            <div class="project-card">
+                <h3>Extrusão: Aprendendo a Extrusar</h3>
+                <p><strong>Tecnologias:</strong> JavaScript, HTML, CSS, Figma (Design)</p>
+                <p>Aplicativo voltado para o treinamento de operadores de máquinas e apoio à decisão técnica durante os turnos. O projeto inclui módulos de microlearning e onboarding, focando na redução de falhas e melhoria contínua dos processos da indústria de plásticos.</p>
+            </div>
+        </section>
+    </div>
+
 </body>
 </html>
